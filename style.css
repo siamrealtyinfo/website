@@ -1,0 +1,26 @@
+.property-card{
+    border: 1px solid #cccccc;
+    padding: 15px;  
+    /* margin-bottom: 20px; */
+    width: 30%;
+    box-sizing: border-box;
+}
+.property-image{
+    width: 100%;
+    
+    /*そのままの画像の場合*/
+    /* height: auto; */
+
+    /*画像の高さをそろえる場合*/
+    height: 220px;
+    object-fit: cover;
+}
+.property-title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#property-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
