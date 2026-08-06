@@ -18,9 +18,15 @@
 .property-title{
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 18px
 }
 #property-list{
     display: flex;
     flex-wrap: wrap;
     gap: 20px; 
+}
+@media (max-width: 768px){
+    .property-card{
+        width: 100%;
+    }
 }
