@@ -5,10 +5,11 @@
     width: 30%;
     box-sizing: border-box;
 }
-/*.property-card h2{
-    font-size: 18px
-
-}*/
+.property-card h2{
+    font-size: 16px;
+    line-height: 1.4;
+    min-height: 2.8em;
+}
 .property-image{
     width: 100%;
     
