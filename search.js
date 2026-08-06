@@ -18,6 +18,11 @@ fetch(API_URL)
                 const cardElement = document.createElement("div");
                 cardElement.className = "property-card";
 
+                const imageElement = document.createElement("img");
+                imageElement.className = "property-image";
+                imageElement.src = property.image;
+                cardElement.appendChild(imageElement);
+
                 const areaElement = document.createElement("p");
                 areaElement.className = "property-area";
                 areaElement.textContent = property.area;
@@ -28,11 +33,6 @@ fetch(API_URL)
                 titleElement.textContent = property.name;
                 cardElement.appendChild(titleElement);
                 
-                const imageElement = document.createElement("img");
-                imageElement.className = "property-image";
-                imageElement.src = property.image;
-                cardElement.appendChild(imageElement);
-
                 /*
                 const rentElement = document.createElement("p");
                 rentElement.textContent = property.rent + " THB";
