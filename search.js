@@ -18,15 +18,15 @@ fetch(API_URL)
                 const cardElement = document.createElement("div");
                 cardElement.className = "property-card";
 
-                const imageElement = document.createElement("img");
-                imageElement.className = "property-image";
-                imageElement.src = property.image;
-                cardElement.appendChild(imageElement);
-
                 const areaElement = document.createElement("p");
                 areaElement.className = "property-area";
                 areaElement.textContent = property.area;
                 cardElement.appendChild(areaElement);
+
+                const imageElement = document.createElement("img");
+                imageElement.className = "property-image";
+                imageElement.src = property.image;
+                cardElement.appendChild(imageElement);
 
                 const titleElement = document.createElement("h2");
                 titleElement.className = "property-title";
