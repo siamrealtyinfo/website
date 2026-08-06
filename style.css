@@ -5,11 +5,11 @@
     width: 30%;
     box-sizing: border-box;
 }
-.property-card h2{
+/*.property-card h2{
     font-size: 18px;
     line-height: 1.4;
     min-height: 2.8em;
-}
+}*/
 .property-image{
     width: 100%;
     
@@ -23,7 +23,9 @@
 .property-title{
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 20px !important;
+    line-height: 1.4;
+    min-height: 2.8em;
 }
 #property-list{
     display: flex;
