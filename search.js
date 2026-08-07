@@ -28,7 +28,7 @@ fetch(API_URL)
                 imageElement.src = property.image;
                 cardElement.appendChild(imageElement);
 
-                const titleElement = document.createElement("h2");
+                const titleElement = document.createElement("h3");
                 titleElement.className = "property-title";
                 titleElement.textContent = property.name;
                 cardElement.appendChild(titleElement);
