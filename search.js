@@ -20,7 +20,7 @@ function renderProperties(properties){
     propertyList.innerHTML = "";
 
     // 物件カードを設定し、物件リストに追加
-    for (const property of filteredProperties){
+    for (const property of properties){
         // 物件カード
         const cardElement = document.createElement("div");
         cardElement.className = "property-card";
@@ -76,7 +76,7 @@ fetch(API_URL)
         renderProperties(properties);
 
         // Searchボタン押下時、条件入力を反映
-        searchButton.adEventListener("click", () => {
+        searchButton.addEventListener("click", () => {
             
             // 条件に適合するか判定
             const filteredProperties = properties.filter(property =>{
@@ -92,7 +92,7 @@ fetch(API_URL)
                 // コンドミニアム名
                 if (
                     condoNameInput.value !== "" 
-                    && !property.name.toLowerCase().includes(condoNameInput.value.toLowerCase)
+                    && !property.name.toLowerCase().includes(condoNameInput.value.toLowerCase())
                 ){
                     return false;
                 }
