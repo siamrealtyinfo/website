@@ -5,7 +5,7 @@ const bedroomsSelect = document.getElementById("bedrooms");
 const sizeMinInput = document.getElementById("size-min");
 const sizeMaxInput = document.getElementById("size-max");
 const rentMinInput = document.getElementById("rent-min");
-const rentMaxInput = document.getElementById("rent-min");
+const rentMaxInput = document.getElementById("rent-max");
 const searchButton = document.getElementById("search-button");
 
 // HTMLで作成済みのproperty-list（物件リスト一覧）のdivisionを呼び出す
@@ -59,7 +59,7 @@ function renderProperties(properties){
         // 物件リストに物件カードを追加
         propertyList.appendChild(cardElement);
         
-    };
+    }
 
 }
 
@@ -102,7 +102,7 @@ fetch(API_URL)
                     bedroomsSelect.value != "" 
                     && property.bedrooms !== bedroomsSelect.value
                 ){
-                    return false
+                    return false;
                 }
 
                 // サイズ：下限
@@ -110,7 +110,7 @@ fetch(API_URL)
                     sizeMinInput.value !== ""
                     && Number(property.size) < Number(sizeMinInput.value)
                 ){
-                    return false
+                    return false;
                 }
 
                 // サイズ：上限
@@ -118,7 +118,7 @@ fetch(API_URL)
                     sizeMaxInput.value !== ""
                     && Number(property.size) > Number(sizeMaxInput.value)
                 ){
-                    return false
+                    return false;
                 }
 
                 //　家賃・下限
@@ -126,7 +126,7 @@ fetch(API_URL)
                     rentMinInput.value !== ""
                     && Number(property.rent) < Number(rentMinInput.value)
                 ){
-                    return false
+                    return false;
                 }
                 
                 //　家賃・上限
@@ -134,13 +134,12 @@ fetch(API_URL)
                     rentMaxInput.value !== ""
                     && Number(property.rent) > Number(rentMaxInput.value)
                 ){
-                    return false
+                    return false;
                 }
 
                 // すべての条件に適合した場合のみTrueを返す
                 return true;
-            }
-            );
+            });
 
             // 条件に適合した物件リストを表示設定
             renderProperties(filteredProperties);
