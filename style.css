@@ -42,7 +42,7 @@
 #property-search {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     align-items: end;
 
     padding: 20px;
@@ -51,12 +51,14 @@
     border: 1px solid #cccccc;
 }
 
+
 /* 各検索条件 */
 #property-search label {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 6px;
 }
+
 
 /* 入力欄・選択欄 */
 #property-search input,
@@ -66,9 +68,19 @@
     box-sizing: border-box;
 }
 
+.range-inputs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.range-inputs input {
+    width: 120px;
+}
+
 /* Searchボタン */
 #search-button {
     height: 36px;
-    padding: 0 20px;
+    padding: 0 24px;
     cursor: pointer;
 }
