@@ -37,3 +37,38 @@
         width: 100%;
     }
 }
+
+/* 検索条件エリア */
+#property-search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: end;
+
+    padding: 20px;
+    margin-bottom: 30px;
+
+    border: 1px solid #cccccc;
+}
+
+/* 各検索条件 */
+#property-search label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* 入力欄・選択欄 */
+#property-search input,
+#property-search select {
+    height: 36px;
+    padding: 5px 8px;
+    box-sizing: border-box;
+}
+
+/* Searchボタン */
+#search-button {
+    height: 36px;
+    padding: 0 20px;
+    cursor: pointer;
+}
