@@ -43,6 +43,12 @@ function renderProperties(properties){
         titleElement.textContent = property.name;
         cardElement.appendChild(titleElement);
         
+        // 家賃
+        const rentElement = document.createElement("p");
+        rentElement.className = "property-rent";
+        rentElement.textContent = property.rent;
+        cardElement.appendChild(rentElement);
+
         // 説明
         const descriptionElement = document.createElement("p");
         descriptionElement.className = "property-description";
@@ -58,9 +64,7 @@ function renderProperties(properties){
 
         // 物件リストに物件カードを追加
         propertyList.appendChild(cardElement);
-        
     }
-
 }
 
 // GASから物件データを取得
