@@ -128,7 +128,7 @@ fetch(API_URL)
                 //　家賃・下限
                 if (
                     rentMinInput.value !== ""
-                    && property.rent !=="N/A"
+                    && property.rent =="N/A"
                     && Number(property.rent) < Number(rentMinInput.value)
                 ){
                     return false;
@@ -137,7 +137,7 @@ fetch(API_URL)
                 //　家賃・上限
                 if (
                     rentMaxInput.value !== ""
-                    && property.rent !=="N/A"
+                    && property.rent =="N/A"
                     && Number(property.rent) > Number(rentMaxInput.value)
                 ){
                     return false;
