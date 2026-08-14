@@ -43,11 +43,12 @@ function renderProperties(properties){
         titleElement.textContent = property.name;
         cardElement.appendChild(titleElement);
         
-        // 家賃
+/*        // 家賃
         const rentElement = document.createElement("p");
         rentElement.className = "property-rent";
         rentElement.textContent = property.rent;
         cardElement.appendChild(rentElement);
+*/
 
         // 説明
         const descriptionElement = document.createElement("p");
